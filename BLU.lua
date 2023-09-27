@@ -239,7 +239,7 @@ function init_gear_sets()
     legs={ name="Psycloth Lappas", augments={'MP+80','Mag. Acc.+15','"Fast Cast"+7',}},
     feet={ name="Herculean Boots", augments={'Accuracy+20','"Triple Atk."+4','AGI+3',}},
     neck="Baetyl Pendant",
-    waist="Twilight Belt",
+    waist="Witful Belt",
     left_ear="Mache Earring +1",
     right_ear="Suppanomimi",
     left_ring="Sangoma Ring",
@@ -252,11 +252,11 @@ function init_gear_sets()
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
-    main="Thibron",
-    sub={ name="Colada", augments={'Haste+2','Accuracy+9','Attack+9','DMG:+18',}},
+    main="Kaja Sword",
+    sub="Thibron",
     ammo="Hydrocera",
     head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
-    body="Jhakri Robe",
+    body="Jhakri Robe +1",
     hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
     legs={ name="Herculean Trousers", augments={'Attack+24','"Triple Atk."+2','DEX+8',}},
     feet={ name="Herculean Boots", augments={'Accuracy+20','"Triple Atk."+4','AGI+3',}},
@@ -273,11 +273,9 @@ function init_gear_sets()
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
 
     sets.precast.WS['Requiescat'] = {
-    main="Thibron",
-    sub={ name="Colada", augments={'Haste+2','Accuracy+9','Attack+9','DMG:+18',}},
     ammo="Hydrocera",
     head="Weath. Corona +1",
-    body="Jhakri Robe",
+    body="Jhakri Robe +1",
     hands={ name="Herculean Gloves", augments={'Attack+25','"Triple Atk."+3','DEX+5',}},
     legs="Gyve Trousers",
     feet={ name="Herculean Boots", augments={'Accuracy+20','"Triple Atk."+4','AGI+3',}},
@@ -293,7 +291,7 @@ function init_gear_sets()
 	sets.precast.WS['Expiacion'] = {
     ammo="Hydrocera",
     head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
-    body="Jhakri Robe",
+    body="Jhakri Robe +1",
     hands="Jhakri Cuffs +1",
     legs={ name="Herculean Trousers", augments={'Attack+24','"Triple Atk."+2','DEX+8',}},
     feet="Aya. Gambieras +1",
@@ -311,7 +309,7 @@ function init_gear_sets()
     head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
     body="Assim. Jubbah +1",
     hands="Jhakri Cuffs +1",
-    legs={ name="Herculean Trousers", augments={'Attack+24','"Triple Atk."+2','DEX+8',}},
+    legs="Luhlaza Shalwar +2",
     feet="Aya. Gambieras +1",
     neck="Mirage Stole +1",
     waist="Sailfi Belt +1",
@@ -325,31 +323,29 @@ function init_gear_sets()
 sets.precast.WS['Chant du Cygne'] = {
     ammo="Aurgelmir Orb +1",
     head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
-    body="Ayanmo Corazza",
+    body="Ayanmo Corazza +1",
     hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
-    legs="Ayanmo Cosciales",
+    legs="Luhlaza Shalwar +2",
     feet="Aya. Gambieras +1",
     neck="Mirage Stole +1",
     waist="Prosilio Belt +1",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     right_ear="Ishvara Earring",
     left_ring="Karieyh Ring",
-    right_ring="Rajas Ring",
+    right_ring="Epona's Ring",
     back={ name="Rosmerta's Cape", augments={'DEX+6',}},
 	}
     
     -- Midcast Sets
     sets.midcast.FastRecast = {
-    main="Thibron",
-    sub={ name="Colada", augments={'Haste+2','Accuracy+9','Attack+9','DMG:+18',}},
     ammo="Mantoptera Eye",
-    head="Shned. Chapeau +1",
-    body="Teal Saio",
+    head="Carmine Mask",
+    body={ name="Luhlaza Jubbah +1", augments={'Enhances "Enchainment" effect',}},
     hands={ name="Leyline Gloves", augments={'Accuracy+6','Mag. Acc.+2','"Mag.Atk.Bns."+6',}},
     legs={ name="Psycloth Lappas", augments={'MP+80','Mag. Acc.+15','"Fast Cast"+7',}},
     feet={ name="Herculean Boots", augments={'Accuracy+20','"Triple Atk."+4','AGI+3',}},
     neck="Baetyl Pendant",
-    waist="Twilight Belt",
+    waist="Witful Belt",
     left_ear="Mache Earring +1",
     right_ear="Suppanomimi",
     left_ring="Sangoma Ring",
@@ -358,13 +354,27 @@ sets.precast.WS['Chant du Cygne'] = {
 }
 
         
-    sets.midcast['Blue Magic'] = {}
+    sets.midcast['Blue Magic'] = {
+	
+	ammo="Mavi Tathlum",
+    head="Hashishin Kavuk",
+    body="Hashishin Mintan",
+    hands="Mv. Bazubands +1",
+    legs={ name="Psycloth Lappas", augments={'MP+80','Mag. Acc.+15','"Fast Cast"+7',}},
+    feet="Aya. Gambieras +1",
+    neck={ name="Mirage Stole +1", augments={'Path: A',}},
+    waist="Witful Belt",
+    left_ear="Psystorm Earring",
+    right_ear="Hecate's Earring",
+    left_ring="Petrov Ring",
+    right_ring="Rajas Ring",
+    back={ name="Rosmerta's Cape", augments={'DEX+6',}},
+	
+}
     
     -- Physical Spells --
     
     sets.midcast['Blue Magic'].Physical = {
-    main="Thibron",
-    sub={ name="Colada", augments={'Haste+2','Accuracy+9','Attack+9','DMG:+18',}},
     ammo="Aurgelmir Orb +1",
     head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
     body="Assim. Jubbah +1",
@@ -381,11 +391,9 @@ sets.precast.WS['Chant du Cygne'] = {
 }
 
     sets.midcast['Blue Magic'].PhysicalAcc = {
-    main="Thibron",
-    sub={ name="Colada", augments={'Haste+2','Accuracy+9','Attack+9','DMG:+18',}},
     ammo="Aurgelmir Orb +1",
     head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
-    body="Jhakri Robe",
+    body="Jhakri Robe +1",
     hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
     legs="Ayanmo Cosciales",
     feet={ name="Herculean Boots", augments={'Accuracy+20','"Triple Atk."+4','AGI+3',}},
@@ -399,11 +407,9 @@ sets.precast.WS['Chant du Cygne'] = {
 }
 
     sets.midcast['Blue Magic'].PhysicalStr = {   
-    main="Thibron",
-    sub={ name="Colada", augments={'Haste+2','Accuracy+9','Attack+9','DMG:+18',}},
     ammo="Aurgelmir Orb +1",
     head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
-    body="Ayanmo Corazza",
+    body="Ayanmo Corazza +1",
     hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
     legs="Ayanmo Cosciales",
     feet={ name="Herculean Boots", augments={'Accuracy+20','"Triple Atk."+4','AGI+3',}},
@@ -415,11 +421,10 @@ sets.precast.WS['Chant du Cygne'] = {
     right_ring="Rajas Ring",
     back="Rosmerta's cape",}
 
-    sets.midcast['Blue Magic'].PhysicalDex = {main="Thibron",
-    sub={ name="Colada", augments={'Haste+2','Accuracy+9','Attack+9','DMG:+18',}},
+    sets.midcast['Blue Magic'].PhysicalDex = {
     ammo="Aurgelmir Orb +1",
     head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
-    body="Ayanmo Corazza",
+    body="Ayanmo Corazza +1",
     hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
     legs="Ayanmo Cosciales",
     feet={ name="Herculean Boots", augments={'Accuracy+20','"Triple Atk."+4','AGI+3',}},
@@ -431,11 +436,10 @@ sets.precast.WS['Chant du Cygne'] = {
     right_ring="Rajas Ring",
     back="Rosmerta's cape",}
 
-    sets.midcast['Blue Magic'].PhysicalVit = {main="Thibron",
-    sub={ name="Colada", augments={'Haste+2','Accuracy+9','Attack+9','DMG:+18',}},
+    sets.midcast['Blue Magic'].PhysicalVit = {
     ammo="Aurgelmir Orb +1",
-    hhead={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
-    body="Ayanmo Corazza",
+    head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
+    body="Ayanmo Corazza +1",
     hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
     legs="Ayanmo Cosciales",
     feet={ name="Herculean Boots", augments={'Accuracy+20','"Triple Atk."+4','AGI+3',}},
@@ -447,11 +451,10 @@ sets.precast.WS['Chant du Cygne'] = {
     right_ring="Rajas Ring",
     back="Rosmerta's cape",}
 
-    sets.midcast['Blue Magic'].PhysicalAgi = {main="Thibron",
-    sub={ name="Colada", augments={'Haste+2','Accuracy+9','Attack+9','DMG:+18',}},
+    sets.midcast['Blue Magic'].PhysicalAgi = {
     ammo="Aurgelmir Orb +1",
     head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
-    body="Ayanmo Corazza",
+    body="Ayanmo Corazza +1",
     hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
     legs="Ayanmo Cosciales",
     feet={ name="Herculean Boots", augments={'Accuracy+20','"Triple Atk."+4','AGI+3',}},
@@ -463,11 +466,10 @@ sets.precast.WS['Chant du Cygne'] = {
     right_ring="Rajas Ring",
     back="Rosmerta's cape",}
 	
-    sets.midcast['Blue Magic'].PhysicalInt = {main="Thibron",
-    sub={ name="Colada", augments={'Haste+2','Accuracy+9','Attack+9','DMG:+18',}},
+    sets.midcast['Blue Magic'].PhysicalInt = {
     ammo="Aurgelmir Orb +1",
     head="Shned. Chapeau +1",
-    body="Jhakri Robe",
+    body="Jhakri Robe +1",
     hands={ name="Leyline Gloves", augments={'Accuracy+6','Mag. Acc.+2','"Mag.Atk.Bns."+6',}},
     legs="Ayanmo Cosciales",
     feet={ name="Herculean Boots", augments={'Accuracy+20','"Triple Atk."+4','AGI+3',}},
@@ -479,11 +481,10 @@ sets.precast.WS['Chant du Cygne'] = {
     right_ring="Rajas Ring",
     back="Rosmerta's cape",}
 
-    sets.midcast['Blue Magic'].PhysicalMnd = {main="Thibron",
-    sub={ name="Colada", augments={'Haste+2','Accuracy+9','Attack+9','DMG:+18',}},
+    sets.midcast['Blue Magic'].PhysicalMnd = {
     ammo="Aurgelmir Orb +1",
     head="Shned. Chapeau +1",
-    body="Jhakri Robe",
+    body="Jhakri Robe +1",
     hands={ name="Leyline Gloves", augments={'Accuracy+6','Mag. Acc.+2','"Mag.Atk.Bns."+6',}},
     legs="Ayanmo Cosciales",
     feet={ name="Herculean Boots", augments={'Accuracy+20','"Triple Atk."+4','AGI+3',}},
@@ -496,11 +497,10 @@ sets.precast.WS['Chant du Cygne'] = {
     back="Rosmerta's cape",}
 
 
-    sets.midcast['Blue Magic'].PhysicalHP = {main="Thibron",
-    sub={ name="Colada", augments={'Haste+2','Accuracy+9','Attack+9','DMG:+18',}},
+    sets.midcast['Blue Magic'].PhysicalHP = {
     ammo="Aurgelmir Orb +1",
     head="Shned. Chapeau +1",
-    body="Jhakri Robe",
+    body="Jhakri Robe +1",
     hands={ name="Leyline Gloves", augments={'Accuracy+6','Mag. Acc.+2','"Mag.Atk.Bns."+6',}},
     legs="Ayanmo Cosciales",
     feet={ name="Herculean Boots", augments={'Accuracy+20','"Triple Atk."+4','AGI+3',}},
@@ -516,11 +516,9 @@ sets.precast.WS['Chant du Cygne'] = {
     -- Magical Spells --
     
     sets.midcast['Blue Magic'].Magical = {
-    main="Thibron",
-    sub={ name="Colada", augments={'Haste+2','Accuracy+9','Attack+9','DMG:+18',}},
     ammo="Hydrocera",
     head="Weath. Corona +1",
-    body="Jhakri Robe",
+    body="Jhakri Robe +1",
     hands={ name="Leyline Gloves", augments={'Accuracy+6','Mag. Acc.+2','"Mag.Atk.Bns."+6',}},
     legs="Gyve Trousers",
     feet="Weath. Souliers +1",
@@ -534,11 +532,9 @@ sets.precast.WS['Chant du Cygne'] = {
 }
 
     sets.midcast['Blue Magic'].MagicAccuracy = {
-    main="Thibron",
-    sub={ name="Colada", augments={'Haste+2','Accuracy+9','Attack+9','DMG:+18',}},
     ammo="Hydrocera",
     head="Weath. Corona +1",
-    body="Jhakri Robe",
+    body="Jhakri Robe +1",
     hands={ name="Leyline Gloves", augments={'Accuracy+6','Mag. Acc.+2','"Mag.Atk.Bns."+6',}},
     legs="Gyve Trousers",
     feet={ name="Herculean Boots", augments={'Accuracy+20','"Triple Atk."+4','AGI+3',}},
@@ -564,11 +560,11 @@ sets.precast.WS['Chant du Cygne'] = {
     
     -- Idle sets
     sets.idle = {
-    main="Thibron",
-    sub={ name="Colada", augments={'Haste+2','Accuracy+9','Attack+9','DMG:+18',}},
+    main="Kaja Sword",
+    sub="Thibron",
     ammo="Aurgelmir Orb +1",
     head="Ayanmo Zucchetto +1",
-    body="Ayanmo Corazza",
+    body="Ayanmo Corazza +1",
     hands={ name="Herculean Gloves", augments={'Attack+25','"Triple Atk."+3','DEX+5',}},
     legs="Ayanmo Cosciales",
     feet="Aya. Gambieras +1",
@@ -582,11 +578,11 @@ sets.precast.WS['Chant du Cygne'] = {
 }
 
     sets.idle.Town = {
-    main="Thibron",
-    sub={ name="Colada", augments={'Haste+2','Accuracy+9','Attack+9','DMG:+18',}},
+    main="Kaja Sword",
+    sub="Thibron",
     ammo="Aurgelmir Orb +1",
     head="Shned. Chapeau +1",
-    body="Jhakri Robe",
+    body="Jhakri Robe +1",
     hands={ name="Leyline Gloves", augments={'Accuracy+6','Mag. Acc.+2','"Mag.Atk.Bns."+6',}},
     legs="Ayanmo Cosciales",
     feet={ name="Herculean Boots", augments={'Accuracy+20','"Triple Atk."+4','AGI+3',}},
@@ -600,6 +596,10 @@ sets.precast.WS['Chant du Cygne'] = {
 
 }
 
+	sets.idle.Refresh = set_combine(sets.idle, {
+	body="Jhakri Robe +1",
+	})
+	
 	
 
     -- Engaged sets
@@ -611,26 +611,22 @@ sets.precast.WS['Chant du Cygne'] = {
     
     -- Normal melee group
     sets.engaged = {
-    main="Thibron",
-    sub={ name="Colada", augments={'Haste+2','Accuracy+9','Attack+9','DMG:+18',}},
     ammo="Aurgelmir Orb +1",
     head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
     body={ name="Adhemar Jacket +1", augments={'STR+12','DEX+12','Attack+20',}},
     hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
-    legs="Ayanmo Cosciales",
+    legs="Malignance Tights",
     feet={ name="Herculean Boots", augments={'Accuracy+20','"Triple Atk."+4','AGI+3',}},
     neck="Mirage Stole +1",
     waist="Twilight Belt",
-    left_ear="Mache Earring +1",
+    left_ear="Dedition Earring",
     right_ear="Suppanomimi",
     left_ring="Petrov Ring",
-    right_ring="Defending Ring",
+    right_ring="Epona's Ring",
     back="Rosmerta's cape",
 }
 
     sets.engaged.Acc = {
-    main="Thibron",
-    sub={ name="Colada", augments={'Haste+2','Accuracy+9','Attack+9','DMG:+18',}},
     ammo="Aurgelmir Orb +1",
     head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
     body={ name="Adhemar Jacket +1", augments={'STR+12','DEX+12','Attack+20',}},
@@ -642,31 +638,14 @@ sets.precast.WS['Chant du Cygne'] = {
     left_ear="Mache Earring +1",
     right_ear="Suppanomimi",
     left_ring="Petrov Ring",
-    right_ring="Rajas Ring",
+    right_ring="Epona's Ring",
     back="Rosmerta's cape",
 }
 
-    sets.engaged.DW = {
-    main="Thibron",
-    sub={ name="Colada", augments={'Haste+2','Accuracy+9','Attack+9','DMG:+18',}},
-    ammo="Aurgelmir Orb +1",
-    head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
-    body={ name="Adhemar Jacket +1", augments={'STR+12','DEX+12','Attack+20',}},
-    hands={ name="Adhemar Wrist. +1", augments={'STR+12','DEX+12','Attack+20',}},
-    legs="Ayanmo Cosciales",
-    feet={ name="Herculean Boots", augments={'Accuracy+20','"Triple Atk."+4','AGI+3',}},
-    neck="Mirage Stole +1",
-    waist="Twilight Belt",
-    left_ear="Mache Earring +1",
-    right_ear="Suppanomimi",
-    left_ring="Petrov Ring",
-    right_ring="Rajas Ring",
-    back="Rosmerta's cape",
-}
+    sets.engaged.DW = set_combine(sets.engaged, {})
+	
 
     sets.engaged.DW.Acc = {
-    main="Thibron",
-    sub={ name="Colada", augments={'Haste+2','Accuracy+9','Attack+9','DMG:+18',}},
     ammo="Aurgelmir Orb +1",
     head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
     body={ name="Adhemar Jacket +1", augments={'STR+12','DEX+12','Attack+20',}},
@@ -678,7 +657,7 @@ sets.precast.WS['Chant du Cygne'] = {
     left_ear="Mache Earring +1",
     right_ear="Suppanomimi",
     left_ring="Petrov Ring",
-    right_ring="Rajas Ring",
+    right_ring="Epona's Ring",
     back="Rosmerta's cape",
 }
 
@@ -686,9 +665,9 @@ sets.precast.WS['Chant du Cygne'] = {
 	sets.defense.PDT = {
     ammo="Aurgelmir Orb +1",
     head="Ayanmo Zucchetto +1",
-    body="Ayanmo Corazza",
+    body="Ayanmo Corazza +1",
     hands={ name="Herculean Gloves", augments={'Attack+25','"Triple Atk."+3','DEX+5',}},
-    legs="Ayanmo Cosciales",
+    legs="Malignance Tights",
     feet="Aya. Gambieras +1",
     neck="Mirage Stole +1",
     waist="Twilight Belt",
